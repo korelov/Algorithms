@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class FizzBuzz {
 
-    public static String[] fizzBuzz(int startNumber, int endNumber) {
+    public String[] fizzBuzz(int startNumber, int endNumber) {
         String[] numbers = new String[endNumber - startNumber + 1];
         int newNumber = startNumber;
         for (int i = startNumber - startNumber; i < (endNumber - startNumber + 1); i++) {
@@ -18,8 +18,6 @@ public class FizzBuzz {
             }
             newNumber += 1;
         }
-
-
 //        int[] numbers1 = new int[endNumber - startNumber + 1];
 //        int indexArr = 0;
 //        for (int i = startNumber; i <= endNumber; i++) {
@@ -27,11 +25,5 @@ public class FizzBuzz {
 //        }
         System.out.println(Arrays.toString(numbers));
         return numbers;
-
-
     }
-
-
-
-
 }
