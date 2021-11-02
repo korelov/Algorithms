@@ -15,4 +15,47 @@ public class FizzBuzzTest {
         Assert.assertArrayEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void testGoodNumber() {
+        int m = 15;
+        String expectedResult = "Good Number";
+
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actualResult = fizzBuzz.checkNumber(m);
+
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testBadNumber() {
+        int m = 33;
+        String expectedResult = "Bad Number";
+
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actualResult = fizzBuzz.checkNumber(m);
+
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testPoorNumber() {
+        int m = 55;
+        String expectedResult = "Poor Number";
+
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actualResult = fizzBuzz.checkNumber(m);
+
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testNumber() {
+        int m = 19;
+        String expectedResult = "-1";
+
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actualResult = fizzBuzz.checkNumber(m);
+
+        Assert.assertEquals(expectedResult, actualResult);
+    }
 }

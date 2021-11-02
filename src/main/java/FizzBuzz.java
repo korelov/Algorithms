@@ -26,4 +26,19 @@ public class FizzBuzz {
         System.out.println(Arrays.toString(numbers));
         return numbers;
     }
+    public String checkNumber(int m) {
+        if (m % 15 == 0) {
+
+            return "Good Number";
+        } else if (m % 3 == 0) {
+
+            return "Bad Number";
+        } else if (m % 5 == 0) {
+
+            return "Poor Number";
+        } else {
+            return "-1";
+        }
+    }
+
 }
