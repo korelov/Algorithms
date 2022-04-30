@@ -1,3 +1,5 @@
+package old;
+
 public class OddIndexesValues {
 
     public int[] returnValuesOfOddIndexes(int[] array) {

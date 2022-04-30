@@ -1,3 +1,5 @@
+package old;
+
 public class FizzBuzzWoof {
 
     public void printFizzBuzzWoof(int n) {

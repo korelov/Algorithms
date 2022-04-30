@@ -1,3 +1,5 @@
+package old;
+
 public class PositiveNegativeZero {
 
     public boolean isPositiveNegativeZero(int number) {

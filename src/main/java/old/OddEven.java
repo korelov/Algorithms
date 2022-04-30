@@ -1,3 +1,5 @@
+package old;
+
 public class OddEven {
 
     public String oddEven(int number) {

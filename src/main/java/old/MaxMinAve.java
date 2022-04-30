@@ -1,3 +1,5 @@
+package old;
+
 public class MaxMinAve {
 
     public int[] returnMaxMinAve(int[] array) {

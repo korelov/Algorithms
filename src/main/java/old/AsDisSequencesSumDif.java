@@ -1,3 +1,5 @@
+package old;
+
 public class AsDisSequencesSumDif {
 
     public int countResult(int n) {

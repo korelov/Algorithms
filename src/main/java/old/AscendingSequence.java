@@ -1,3 +1,5 @@
+package old;
+
 public class AscendingSequence {
 
     public int[] ascendingSequence(int a, int b, int n) {
