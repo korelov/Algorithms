@@ -19,9 +19,9 @@ public class DemoQA {
 
 
     @AfterMethod
-    public void DriverClose() {
-        driver.quit();
-    }
+//    public void DriverClose() {
+//        driver.quit();
+//    }
 
 
     @Ignore
@@ -58,9 +58,10 @@ public class DemoQA {
 
         List<String> expected = Arrays.asList("You have done a double click", "You have done a right click", "You have done a dynamic click");
 
-        for (int i = 0; i < expected.size(); i++) {
-            Assert.assertEquals(actual.get(i).getText(), expected.get(i));
-        }
+//        for (int i = 0; i < expected.size(); i++) {
+//            Assert.assertEquals(actual.get(i).getText(), expected.get(i));
+//        }
+        Assert.assertTrue(actual.equals(expected));
     }
 
     @Test
@@ -120,7 +121,7 @@ public class DemoQA {
     }
 
 
-    @Ignore
+
     @Test
     public void testDemoQACheckBox() {
 
