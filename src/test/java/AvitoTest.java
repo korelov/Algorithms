@@ -1,5 +1,4 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import runner.BaseTest;
@@ -17,7 +16,7 @@ public class AvitoTest extends BaseTest {
 
         getDriver().findElement(By.xpath("//input[@class='input-input-Zpzc1']")).sendKeys("Принтер");
         getDriver().findElement(By.xpath("//div[@class='main-select-JJyaZ main-location-XUs1_']")).click();
-        getDriver().findElement(By.xpath("//input[@class='suggest-input-rORJM']")).sendKeys("Владивосток");
+        getDriver().findElement(By.xpath("//input[@class='suggest-input-rORJM']")).sendKeys("Москва");
         Thread.sleep(1000);
         getDriver().findElement(By.xpath("//ul[@class='suggest-suggests-CzXfs']/li[@data-marker='suggest(0)']")).click();
 
@@ -32,6 +31,5 @@ public class AvitoTest extends BaseTest {
             System.out.println(getDriver().findElement(By.xpath("(//span[@class='price-price-JP7qe'])[" + i + "]")).getText());
         }
     }
-
 
 }
